@@ -1,19 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
-
-import Home from 'home/containers/Home';
-import Layout from 'shared/containers/Layout';
-import ChargingLocator from 'locator/containers/ChargingLocator';
-import { center } from 'locator/api/defaultCenter';
+import HomeRoutes from 'home/views';
+import LocatorRoutes from 'locator/views';
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-      </Route>
-      <Route path="/charging-locator" element={<Layout stretch />}>
-        <Route index element={<ChargingLocator center={center} zoom={13} />} />
-      </Route>
+      <Route path="/locator/*" element={<LocatorRoutes />} />
+      <Route path="/*" element={<HomeRoutes />} />
     </Routes>
   );
 };

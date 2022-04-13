@@ -20,7 +20,7 @@ const navLinks = [
   },
   {
     label: 'Locate Station',
-    route: '/charging-locator',
+    route: '/locator',
   },
 ];
 
@@ -67,7 +67,10 @@ const Navbar = () => {
               {navLinks.map(navLink => (
                 <MenuItem
                   key={navLink.label}
-                  onClick={() => navigate(navLink.route)}
+                  onClick={() => {
+                    navigate(navLink.route);
+                    setAnchorElNav(null);
+                  }}
                 >
                   <Typography textAlign="center">{navLink.label}</Typography>
                 </MenuItem>
