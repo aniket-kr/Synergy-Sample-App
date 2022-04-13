@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/Synergy-Sample-App/static/css/main.087f6bad.css",
-    "main.js": "/Synergy-Sample-App/static/js/main.0bc550bc.js",
+    "main.js": "/Synergy-Sample-App/static/js/main.e2005ff8.js",
     "index.html": "/Synergy-Sample-App/index.html",
-    "main.087f6bad.css.map": "/Synergy-Sample-App/static/css/main.087f6bad.css.map",
-    "main.0bc550bc.js.map": "/Synergy-Sample-App/static/js/main.0bc550bc.js.map"
+    "main.e2005ff8.js.map": "/Synergy-Sample-App/static/js/main.e2005ff8.js.map"
   },
   "entrypoints": [
-    "static/css/main.087f6bad.css",
-    "static/js/main.0bc550bc.js"
+    "static/js/main.e2005ff8.js"
   ]
 }
